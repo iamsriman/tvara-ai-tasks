@@ -15,7 +15,7 @@ import requests
 import json
 
 # --- Configuration ---
-API_KEY = "AIzaSyDBon3TGnQtYuwm_Qi3nArcJb5M4YbiE_M"   # From Google AI Studio
+API_KEY = "YOUR_API_KEY"   # From Google AI Studio
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 
 def query_gemini(prompt: str, debug: bool = False) -> str:
