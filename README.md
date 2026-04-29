@@ -147,19 +147,3 @@ Score: 0.87
 
 
 
-## Project Structure
-
-```
-tvara-ai-tasks/
-│
-├── task-b-gemini-api/
-│   └── gemini_cli.py
-│
-├── task-c-vectorization/
-│   └── vector_search.py
-│
-└── README.md
-
-
-I’ll give you a **perfect professional mail** to send to Tvara (this matters a lot for selection).
-```
