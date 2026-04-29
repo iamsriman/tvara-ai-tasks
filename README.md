@@ -1,10 +1,11 @@
+
 # Tvara AI Tasks Submission
 
 This repository contains the implementation of assigned tasks for the Tvara AI evaluation.
 
 ---
 
-## ✅ Task A — LeetCode Problem (In Progress)
+## Task A — LeetCode Problem (In Progress)
 
 **Problem:** Linked List Cycle II  
 Link: https://leetcode.com/problems/linked-list-cycle-ii/
@@ -30,7 +31,7 @@ The optimal approach uses Floyd’s Cycle Detection Algorithm (Tortoise and Hare
 
 ---
 
-## ✅ Task B — API Integration (Gemini 2.5 Flash)
+## Task B — API Integration (Gemini 2.5 Flash)
 
 ### Objective:
 Integrate Google's Gemini API and build a simple interface to send prompts and receive responses.
@@ -61,75 +62,94 @@ Integrate Google's Gemini API and build a simple interface to send prompts and r
     }
   ]
 }
-Output:
+````
+
+### Output:
 
 Returns generated text from the model.
 
-Example:
+### Example:
 
-Input:
+**Input:**
 
+```
 What is RAG?
+```
 
-Output:
+**Output:**
 Retrieval-Augmented Generation (RAG) is a technique that enhances LLM responses by retrieving relevant external data before generating answers.
 
-Learnings:
-Working with real-world AI APIs
-Handling HTTP requests and responses
-Debugging API errors (e.g., 503 overload)
-Structuring clean and minimal API integration
-Improvements:
-Move API key to environment variables
-Add retry mechanism for failed requests
-✅ Task C — Vectorization with Hugging Face
-Objective:
+### Learnings:
+
+* Working with real-world AI APIs
+* Handling HTTP requests and responses
+* Debugging API errors (e.g., 503 overload)
+* Structuring clean and minimal API integration
+
+### Improvements:
+
+* Move API key to environment variables
+* Add retry mechanism for failed requests
+
+---
+
+## Task C — Vectorization with Hugging Face
+
+### Objective:
 
 Use an embedding model to convert text into vectors and perform similarity search.
 
-Model Used:
+### Model Used:
 
-intfloat/e5-small-v2
+`intfloat/e5-small-v2`
 
-Implementation Steps:
-Load embedding model using Sentence Transformers
-Define sample sentences (knowledge base)
-Convert sentences into embeddings
-Convert query into embedding
-Compute similarity using cosine similarity
-Return the most relevant sentence
-Important Detail:
+### Implementation Steps:
+
+1. Load embedding model using Sentence Transformers
+2. Define sample sentences (knowledge base)
+3. Convert sentences into embeddings
+4. Convert query into embedding
+5. Compute similarity using cosine similarity
+6. Return the most relevant sentence
+
+### Important Detail:
 
 The E5 model requires prefix formatting:
 
-"passage: " for stored sentences
-"query: " for user input
-Example:
+* "passage: " for stored sentences
+* "query: " for user input
 
-Query:
+### Example:
 
+**Query:**
+
+```
 What is machine learning?
+```
 
-Output:
+**Output:**
 
+```
 Best Match: Machine learning is a subset of AI.
 Score: 0.87
-Learnings:
-Understanding embeddings and vector representations
-Semantic search using cosine similarity
-Basics of retrieval systems
-Foundation for Retrieval-Augmented Generation (RAG)
-Notes:
-Hugging Face authentication warning was observed but does not affect functionality since the model is public.
-🧠 Overall Learning
+```
 
-Through these tasks, I gained practical experience in:
+### Learnings:
 
-API integration with modern LLMs
-Embedding-based semantic search
-Understanding AI system components
-Building clean and minimal implementations
-📂 Project Structure
+* Understanding embeddings and vector representations
+* Semantic search using cosine similarity
+* Basics of retrieval systems
+* Foundation for Retrieval-Augmented Generation (RAG)
+
+### Notes:
+
+* Hugging Face authentication warning was observed but does not affect functionality since the model is public.
+
+
+
+## Project Structure
+
+```
 tvara-ai-tasks/
 │
 ├── task-b-gemini-api/
@@ -139,3 +159,7 @@ tvara-ai-tasks/
 │   └── vector_search.py
 │
 └── README.md
+
+
+I’ll give you a **perfect professional mail** to send to Tvara (this matters a lot for selection).
+```
